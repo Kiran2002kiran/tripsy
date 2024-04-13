@@ -1,0 +1,18 @@
+{% extends 'customer/index.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    {% for tour in alltours %}
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="{{tour.Image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{tour.Destination}}</h5>
+              <p class="card-text">{{tour.Description}}</p>
+              <a href="{% url 'customer:booktours' tour.id %}" class="btn btn-primary">book now</a>
+            </div>
+          </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

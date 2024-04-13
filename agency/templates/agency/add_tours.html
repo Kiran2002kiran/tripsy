@@ -1,0 +1,86 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      #container{
+        background-color: orangered;
+      }
+      #row1{
+        height: 128px;
+        
+      }
+      #center{
+        background-image: url(https://media.istockphoto.com/id/1014974702/photo/travel-planning.webp?b=1&s=170667a&w=0&k=20&c=HfD_2oY-cyDZp-cXt7dBHu-84bRSliLtcblca9RT7Tc=);
+        background-size: cover;
+      }
+      #row2 h1{
+        text-align: center;
+      }
+      #form{
+        margin-left: 38%;
+        color: white;
+        width: 300px;
+      }
+      #form input{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+      }
+      #form button{
+        margin-left: 25%;
+        width: 150px;
+        background-color:orangered;
+        color: white;
+        font-size: 20px;
+      }
+      #row3{
+        height: 128px;
+      }
+      #home_btn{
+        margin-top: 10%;
+        border-radius: 10px;
+        background-color: white;
+        width: 120px;
+        height: 50px;
+      }
+      #home_btn a{
+        text-decoration: none;
+        color: orangered;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="container">
+      <div class="row" id="row1">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <button id="home_btn"><a href="{% url 'customer:index' %}">Home</a></button>
+        </div>
+      </div>
+        <div class="row" id="row2">
+            <div class="col-1"></div>
+            <div class="col-10" id="center" style="border: 1px solid black;">
+              <h1>Add your Next plan</h1>
+                <form action="" method="post"  id="form" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <input type="text" name="agency" id="agency" placeholder="AGENCY NAME" value="{{agency.agencyname}}"><br><br>
+                  <input type="text" name="destination" id="destination" placeholder="DESTINATION"><br><br>
+                  <input type="text" name="description" id="description" placeholder="DESCRIPTION"><br><br>
+                  <input type="file" name="dest_img" id="dest_img" placeholder="DESTINATION IMAGE" style="color: white; font-size: 20px;"><br><br>
+                  <input type="number" name="charge" id="charge" placeholder="CHARGE"><br><br>
+                  <button type="submit" class="btn btn-light">ADD PLAN</button>
+                </form>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row" id="row3"><div class="col-12"></div></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

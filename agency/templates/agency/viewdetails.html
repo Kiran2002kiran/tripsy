@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>viewdetails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      #row1{
+        height: 100px;
+      }
+      #row1 button{
+        margin-top: 40px;
+        width: 200px;
+        border-radius: 10px;
+        height: 40px;
+        background-color: aquamarine;
+      }
+      #row1 button a{
+        color: navy;
+        text-decoration: none;
+        font-size: 19px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="row1">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <button><a href="{% url 'agency:viewtours' %}">View Tours</a></button>
+        </div>
+      </div>
+        <div class="row" id="row2">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card mb-3">
+                    <img src="{{tour.Image.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{tour.Destination}}</h5>
+                      <p class="card-text">{{tour.Description}}</p>
+                      <p class="card-text">{{tour.Charge}}</p>
+                      <p class="card-text"><a href="{% url 'agency:update_tours' tour.id %}" class="btn btn-success">Update</a>
+                      <a href="{% url 'agency:delete_tours' tour.id %}" class="btn btn-danger">Delete</a>
+                      </p>
+                      
+                     
+                    </div>
+                  </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

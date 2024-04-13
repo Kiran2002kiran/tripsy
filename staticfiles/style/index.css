@@ -1,0 +1,199 @@
+.container-fluid{
+    background-color:white;
+}
+#row1{
+    width: 100%;
+    background-color: rgba(107, 172, 216, 0.888);
+}
+#row1 img{
+    width:150px;
+}
+#row1 table td{
+   
+    width: 250px;
+  
+    font-size: larger;
+    font-weight: 600;
+    font-style: italic;
+   
+
+}
+#row1 table{
+    width: 1000px;
+    margin-top:50px;
+    
+}
+#row1 table td a{
+    text-decoration: none;
+    color: black;
+}
+
+#home:hover{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    transform: translateX(0);
+    opacity: 1;
+    list-style-type: none;
+}
+#tours:hover{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+   
+    display: inline-block;
+    text-transform: uppercase;
+    transform: translateX(0);
+    opacity: 1;
+    list-style-type: none;
+}
+#about:hover{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+   
+    display: inline-block;
+    text-transform: uppercase;
+    transform: translateX(0);
+    opacity: 1;
+    list-style-type: none;
+}
+#contact:hover{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+   
+    
+    display: inline-block;
+    text-transform: uppercase;
+    transform: translateX(0);
+    opacity: 1;
+    list-style-type: none;
+}
+#logout:hover{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+   
+    
+    display: inline-block;
+    text-transform: uppercase;
+    transform: translateX(0);
+    opacity: 1;
+    list-style-type: none;
+}
+#log button{
+    margin-top: 50px;
+    background-color: rgba(17, 174, 195, 0.485);
+}
+#log button a{
+    color:white;
+}
+#row2 h1{
+    
+    font-size: 70px;
+    text-align: center;
+    margin-top: 70px;
+    font-style: italic;
+    font-family: serif;
+}
+#row2 h2{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    font-family:serif;
+}
+#row2 img{
+    margin-left: -11px;
+    width: 100%;
+    margin-top:-286px;
+    opacity: 70%;
+}
+#row3 h1{
+    padding-top: 60px;
+    text-align: center;
+    font-family: cursive;
+    color: aqua;
+}
+#row4{
+    margin-top: 40px;
+}
+#row4 h3{
+    font-size: 29px;
+    font-family: cursive;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+#row4 img{
+    margin-top: 15px;
+}
+#row5{
+    height: 100px;
+}
+#row6{
+    height:500px;
+}
+#row6 h3{
+    padding-top: 180px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+#row6 h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+#row7{
+    height: 50px;
+}
+#cnt{
+    background-image: url(cnt.jpg);
+    background-size: cover;
+}
+#cntct{
+    text-align: center;
+}
+#cntct p{
+    margin-top: 40px;
+}
+#dtls h2{
+    text-align: center;
+}
+#dtls p{
+    margin-top: 40px;
+    padding-left: 120px;
+}
+#form h2{
+    text-align: center;
+}
+#form form{
+    padding-left: 100px;
+}
+#name{
+    margin-top: 30px;
+}
+#form form input{
+    border-radius: 5px;
+}
+#form form textarea{
+    border-radius: 5px;
+}
+#form form button{
+    border-radius: 10px;
+    background-color: rgb(249, 215, 21);
+    color: white;
+
+}
+
+
+
