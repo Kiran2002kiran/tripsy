@@ -80,7 +80,7 @@
     }
 </style>
 <body>
-    <div class="container-fluid" id="container">
+    <div class="container-fluid" id="container"> 
         <div class="row" id="row1">
             <div class="col-8"></div>
             <div class="col-4">
@@ -102,7 +102,7 @@
                     <p class="fs-6 fw-bold fst-italic" style="color: red;">{{msg}}</p>
                     <button class="fs-4 fw-bold fst-italic" type="submit" id="login"><form action="{% url 'agency:agency_login' %}">Login</form></button><br>
                     <h4>If not yet registered...?</h4><br>
-                </form>
+                </form>  
                 <button class="fs-5 fw-bold fst-italic" type="submit" id="agency_signup"><a href="{% url 'agency:agency_signup' %}">Register Your Agency</a></button>
             </div>
         </div>
