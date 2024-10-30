@@ -77,18 +77,18 @@ WSGI_APPLICATION = 'tripsy.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 # '''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 # '''
 
-# import dj_database_url
-# DATABASES={
-#     'default':dj_database_url.parse('postgres://tripsydb_user:i171uxGEEy6oKr0nMALsWeOhHZgIqCuC@dpg-cod2en0l6cac73bc9p40-a.oregon-postgres.render.com/tripsydb')
-# }
+import dj_database_url
+DATABASES={
+    'default':dj_database_url.parse('postgresql://tripsy_vhok_user:XHyhEcfqkIcm43RKQWQhVFjidQTaVqFF@dpg-csgvp0ogph6c73btfrl0-a.oregon-postgres.render.com/tripsy_vhok')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
